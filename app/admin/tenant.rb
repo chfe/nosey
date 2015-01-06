@@ -1,4 +1,5 @@
 ActiveAdmin.register Tenant do
+  permit_params :subdomain, :name
 
 
   # See permitted parameters documentation:
