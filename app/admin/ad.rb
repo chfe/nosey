@@ -1,4 +1,5 @@
 ActiveAdmin.register Ad do
+  permit_params :text
 
 
   # See permitted parameters documentation:
