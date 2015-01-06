@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @ad.text %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @ad.user %>
+</p>
+
+<p>
+  <strong>Tenant:</strong>
+  <%= @ad.tenant %>
+</p>
+
+<%= link_to 'Edit', edit_ad_path(@ad) %> |
+<%= link_to 'Back', ads_path %>
