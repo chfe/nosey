@@ -29,6 +29,7 @@ class AdsController < ApplicationController
   # POST /ads.json
   def create
     @ad = Ad.new(ad_params)
+    @ad.user = current_user
 
     respond_to do |format|
       if @ad.save
